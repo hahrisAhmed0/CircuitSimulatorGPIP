@@ -1,0 +1,25 @@
+# input abc, output xy
+# x = maj(abc)
+# y = 1 if abc <3
+
+INPUT(a)
+INPUT(b)
+INPUT(c)
+
+d = AND(b,c)
+e = AND(a, c)
+OUTPUT(x)
+f = AND(a, b)
+h = AND(a', c')
+
+x = OR(d, e, f)
+y = OR(g, h)
+
+g = AND(a', b')
+a' = NOT(a)
+b' = NOT(b)
+c' = NOT(c)
+
+
+
+OUTPUT(y)
